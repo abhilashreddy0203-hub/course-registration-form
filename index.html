@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Regestartion Form</title>
+</head>
+<body>
+    <h2>Course Regestartion Form</h2>
+    <form>
+        <fieldset>
+        <legend>Personal Details</legend>
+        <br>
+        <label for="First Name">First Name:</label>
+        <input type="text" id="First Name" name="First Name" required>
+        <br><br>
+        <label for="Surname">Surname:</label>
+        <input type="text"  id="Surname" name="Surname" required>
+        <br><br>
+        <label for="Mobile Number">Mobile Number:</label>
+        <input type="text"id="Mobile Nmber" name="Mobile Number" required >
+        <br><br>
+        <label for="Email">Email:</label>
+        <input type="text"id="Email" name="Email" required>
+        <br><br>
+        <label for="Password">Password:</label>
+        <input type="text" id="Password" name="Password" minlength="8" required>
+        <br><br>
+        <label for="Confirm Password">Confirm Password</label>
+        <input type="text" id="Confirm Password" name="Confirm Password" minlength="8" required>
+        <br><br>
+        <label for="DOB">Date Of Birth</label>
+        <input type="date" id="DOB" name="DOB" required>
+        <br><br>
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label>
+        <input type="radio" id="Others" name="Gender">
+        <label for="Others">Others</label>
+        <br><br>
+        <label for="Select Country"> Select Country:</label>
+        <select type="option" id="Select Country" name="Select Country">
+         <option value="--Select Country--">--Select Country--</option>  
+         <option value="India">India</option>
+         <option value="USA">USA</option>
+         <option value="uk">uk</option>
+         <option value="Canada">Canada</option>
+         <option value="Australia">Australia</option>
+         </select>
+         <br><br>
+         <label for="Picture">Upload Picture</label>
+         <input type="file" id="Picture" name="picture" required>
+         <br><br>
+         <input type="Reset" value="Reset">
+        </fieldset>
+        <fieldset>
+        <legend>Cousrse Details</legend>
+        <br>
+        <label for="Select Course">Select Course:</label>
+        <select type="option" id="Select Course" name="Select Course">
+        <option value="--Select Course--">--Select Course--</option>
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="HTML&CSS">HTML&CSS</option>
+        <option value="React JS">React JS</option>
+        </select>
+        <br><br>
+        <label for="Delivery Mode">Delivery Mode:</label>
+        <input type="radio" id="Online" name="Delivery Mode">
+        <label for="Online">Online</label>
+        <input type="radio" id="Offline" name="Delivery Mode">
+        <label for="Offline">Offline</label>
+        <br><br>
+        <label for="Comments">Comments:</label>
+        <br><br>
+        <textarea name="Comments" id="Comments" rows="5" cols="40"></textarea>
+        <br>
+        <input type="Submit" value="Submit">
+        </fieldset>   
+    </form>
+</body>
+</html>
